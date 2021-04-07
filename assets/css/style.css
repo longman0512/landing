@@ -699,7 +699,7 @@ section {
 }
 
 .about .content h3 {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 34px;
   color: #5f5950;
 }
@@ -1643,7 +1643,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: rgba(10, 105, 177, 1);
+  background: rgba(113, 170, 178, 1);
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -1915,12 +1915,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .view-more {
   border-radius: 20px;
   border: 1px solid yellow;
-  padding: 5px;
+  padding: 2px 8px;
   margin-top: 10px;
 }
 
@@ -1976,7 +1977,7 @@ section {
   color: white;
   margin-bottom: 30px;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .special {
