@@ -68,12 +68,12 @@ h6 {
   font-size: 15px;
   height: 50px;
   transition: all 0.5s;
-  background: rgba(26, 24, 22, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   color: rgba(255, 255, 255, 0.7);
 }
 
 #topbar.topbar-transparent {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.85);
 }
 
 #topbar.topbar-scrolled {
