@@ -159,7 +159,7 @@ h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: rgba(133, 170, 178, 1);
+  color: rgba(10, 70, 255, 1);
   padding: 9px 14px;
   transition: 0.3s;
   font-size: 15px;
@@ -212,6 +212,10 @@ h6 {
   visibility: visible;
 }
 
+.icofont-navigation-menu{
+  color: rgb(31, 31, 31)
+}
+
 .nav-menu .drop-down li {
   min-width: 180px;
   position: relative;
@@ -219,7 +223,6 @@ h6 {
 
 .text-light {
   width: 48px;
-  height: 48px;
 }
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
@@ -281,7 +284,7 @@ h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 15px;
+  top: 20px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -291,10 +294,11 @@ h6 {
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  color: rgb(31, 31, 31)!important;
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: rgb(31, 31, 31);
 }
 
 .mobile-nav {
@@ -458,9 +462,10 @@ h6 {
 #hero h1 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 53px;
+  font-size: 3.8em;
   font-weight: 700;
 }
+
 
 #hero h1 span {
   color: #ffb03b;
@@ -491,7 +496,7 @@ h6 {
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.9em;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -567,6 +572,8 @@ h6 {
   color: #fff;
   border: 2px solid #ffb03b;
 }
+
+
 
 #hero .btn-menu:hover,
 #hero .btn-book:hover {
@@ -998,6 +1005,7 @@ section {
 --------------------------------------------------------------*/
 .specials {
   overflow: hidden;
+  
 }
 
 .specials .nav-tabs {
@@ -1034,6 +1042,7 @@ section {
   font-weight: 600;
   margin-bottom: 20px;
   color: #433f39;
+  text-align: center;
 }
 
 .specials .details p {
@@ -1647,7 +1656,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: rgba(113, 170, 178, 1);
+  background: rgba(31, 31, 31, 1);
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -1718,6 +1727,10 @@ section {
   border: 1px red solid;
   border-radius: 22px;
   font-weight: bold;
+}
+
+.covid-text {
+  color: red!important;
 }
 
 .covid-part {
@@ -1940,8 +1953,8 @@ section {
 }
 .gallery-item a img {
   object-fit: cover;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 .footer-links li {
  text-align: left;
@@ -1965,12 +1978,13 @@ section {
 
 .phone-number {
   color: #ffb03b;
-  font-size: 41px;
+  font-size: 1.5em;
 }
 
 .incontent-icon {
   color: #ffb03b;
   margin-right: 10px;
+  font-size: 1.2em;
 }
 
 .most-container {
@@ -1980,12 +1994,12 @@ section {
   margin: 0px auto;
   color: white;
   margin-bottom: 30px;
-  line-height: 40px;
-  font-size: 25px;
+  line-height: 50px;
+  font-size: 2.2em;
 }
 
 .special {
-  font-size: 30px!important;
+  font-size: 2.2em;
 }
 
 .mobile-view {
@@ -2006,4 +2020,88 @@ section {
   .mobile-view {
     display: block;
   }
+}
+
+@media only screen and (max-width: 440px) {
+  .btn-menu {
+    display: none!important;
+  }
+  .btn-book {
+    display: none!important;
+  }
+  
+}
+
+@media only screen and (max-width: 1300px) {
+  #hero h1 {
+    font-size: 4vw;
+  }
+  .most-container {
+    line-height: 40px;
+    font-size: 2.8vw;
+  }
+  #hero p {
+    margin: 0 auto 12px auto;
+    font-size: 2.5vw;
+  }
+  .phone-number{
+    font-size: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #hero h1 {
+    font-size: 5vw;
+  }
+  .most-container {
+    line-height: 40px;
+    font-size: 3.5vw;
+  }
+  #hero p {
+    margin: 0 auto 12px auto;
+    font-size: 3vw;
+  }
+  .phone-number{
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #hero h1 {
+    font-size: 7vw;
+  }
+  .most-container {
+    line-height: 40px;
+    font-size: 5vw;
+  }
+  #hero p {
+    margin: 0 auto 12px auto;
+    font-size: 4vw;
+  }
+  .phone-number{
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #hero h1 {
+    font-size: 10vw;
+  }
+  .phone-number{
+    font-size: 10vw;
+  }
+}
+
+.history-row-container {
+  display: flex;
+  align-items: center;
+}
+
+.history-left-container {
+  display: flex;
+  align-items: center;
+}
+
+.his-image {
+  height: 350px;
 }

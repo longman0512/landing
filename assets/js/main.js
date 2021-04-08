@@ -232,5 +232,26 @@
   $(document).ready(function() {
     $('.venobox').venobox();
   });
+  var selectedIndex = 0;
+  function changeHistory () {
 
+    var navLinks = $(".nav-link");
+    selectedIndex++
+    navLinks.map((index, nav)=>{
+      if(index == selectedIndex){
+        nav.className = nav.className + " active"
+        document.getElementById("history"+index).click();
+        
+      } else {
+        nav.className = nav.className.replace("active", "")
+      }
+    })
+    if(selectedIndex > 3) selectedIndex = 0
+    console.log("change history")
+    // setTimeout(changeHistory(), 2000)
+  }
+
+  $(document).ready(function() {
+    setInterval(changeHistory, 2000)
+  });
 })(jQuery);
